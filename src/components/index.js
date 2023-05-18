@@ -5,3 +5,4 @@ export * from './LoadMoreButton/LoadMoreButton';
 export * from './Modal/Modal';
 export * from './Searchbar/Searchbar';
 export * from './icons/search-magnifying-glass-svgrepo-com.svg';
+export * from './ErrorMessage/ErrorMessage';

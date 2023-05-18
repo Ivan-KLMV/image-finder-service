@@ -7,6 +7,7 @@ import {
   LoadMoreButton,
   Modal,
   FooterMessage,
+  ErrorMessage,
 } from '../index';
 
 export class ImageGallery extends Component {
@@ -83,11 +84,13 @@ export class ImageGallery extends Component {
     return (
       <>
         <ImageGalleryStyled>
-          {error && <h1>{error.message}</h1>}
           {images.length > 0 && (
             <ImageGalleryItem images={images} onClick={this.toggleModal} />
           )}
         </ImageGalleryStyled>
+
+        {error && <ErrorMessage>{error.message}</ErrorMessage>}
+
         {isLoading && (
           <ThreeDots
             color="#3f51b5"

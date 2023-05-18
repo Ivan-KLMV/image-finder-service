@@ -1,20 +1,18 @@
-import { Component } from 'react';
+import { useState } from 'react';
 import { ImageGallery, Searchbar } from '../index';
 import { AppStyled } from './App.styled';
 
-export class App extends Component {
-  state = { searchValue: '' };
+export const App = () => {
+  const [searchValue, setSearchValue] = useState('');
 
-  seachQeryHandle = qery => {
-    this.setState({ searchValue: qery });
+  const seachQeryHandle = qery => {
+    setSearchValue(qery);
   };
 
-  render() {
-    return (
-      <AppStyled>
-        <Searchbar onSubmitProp={this.seachQeryHandle} />
-        <ImageGallery searchValue={this.state.searchValue} />
-      </AppStyled>
-    );
-  }
-}
+  return (
+    <AppStyled>
+      <Searchbar onSubmitProp={seachQeryHandle} />
+      <ImageGallery searchValue={searchValue} />
+    </AppStyled>
+  );
+};

@@ -1,47 +1,42 @@
-import { Component } from 'react';
+import { useState } from 'react';
 import { SearchbarStyled } from './Searchbar.styled';
 
-export class Searchbar extends Component {
-  state = {
-    input: '',
+export const Searchbar = ({ onSubmitProp }) => {
+  const [input, setInput] = useState('');
+
+  const handleChange = e => {
+    setInput(e.target.value);
   };
 
-  handleChange = e => {
-    this.setState({ [e.currentTarget.name]: e.target.value });
-  };
-
-  handleSubmit = e => {
+  const handleSubmit = e => {
     e.preventDefault();
-    const { input } = this.state;
 
     if (input.trim() === '') {
       alert('Enter a request');
       return;
     }
 
-    this.props.onSubmitProp(input);
-    this.setState({ input: '' });
+    onSubmitProp(input);
+    setInput('');
   };
 
-  render() {
-    return (
-      <SearchbarStyled>
-        <form onSubmit={this.handleSubmit}>
-          <button type="submit">
-            <span>Search_</span>
-          </button>
+  return (
+    <SearchbarStyled>
+      <form onSubmit={handleSubmit}>
+        <button type="submit">
+          <span>Search_</span>
+        </button>
 
-          <input
-            type="text"
-            name="input"
-            autoComplete="off"
-            autoFocus
-            placeholder="Search images and photos"
-            onChange={this.handleChange}
-            value={this.state.input}
-          />
-        </form>
-      </SearchbarStyled>
-    );
-  }
-}
+        <input
+          type="text"
+          name="input"
+          autoComplete="off"
+          autoFocus
+          placeholder="Search images and photos"
+          onChange={handleChange}
+          value={input}
+        />
+      </form>
+    </SearchbarStyled>
+  );
+};
