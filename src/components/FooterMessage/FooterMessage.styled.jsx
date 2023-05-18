@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterMessageStyled = styled.div`
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   display: flex;
@@ -10,6 +10,7 @@ export const FooterMessageStyled = styled.div`
   min-height: 64px;
   height: 72px;
   width: 100%;
+  margin-bottom: -24px;
 
   color: whitesmoke;
   font-size: 20px;

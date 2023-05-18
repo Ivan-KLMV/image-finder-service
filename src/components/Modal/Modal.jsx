@@ -13,7 +13,6 @@ export const Modal = ({ onClickProp, children }) => {
   });
 
   function escCloseHandle(e) {
-    console.log(e.code);
     if (e.code === 'Escape') {
       onClickProp();
     }
