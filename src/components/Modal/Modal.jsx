@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { createPortal } from 'react-dom';
 import { ModalStyled } from './Modal.styled';
 
@@ -30,4 +31,9 @@ export const Modal = ({ onClickProp, children }) => {
     </ModalStyled>,
     modalRoot
   );
+};
+
+Modal.propTypes = {
+  onClickProp: PropTypes.func.isRequired,
+  children: PropTypes.element,
 };

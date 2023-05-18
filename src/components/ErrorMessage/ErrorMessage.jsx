@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ErrorMessageStyled } from './ErrorMessage.styled';
 
 export const ErrorMessage = ({ children }) => {
@@ -6,4 +7,8 @@ export const ErrorMessage = ({ children }) => {
       <h1>{children}</h1>
     </ErrorMessageStyled>
   );
+};
+
+ErrorMessage.propTypes = {
+  children: PropTypes.string.isRequired,
 };

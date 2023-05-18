@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { ThreeDots } from 'react-loader-spinner';
 import { ImageGalleryStyled } from './ImageGallery.styled';
 import { getImagesApi } from '../../services/getResponse';
@@ -100,4 +101,8 @@ export const ImageGallery = ({ searchValue }) => {
       )}
     </>
   );
+};
+
+ImageGallery.propTypes = {
+  searchValue: PropTypes.string.isRequired,
 };
