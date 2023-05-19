@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterMessageStyled = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   display: flex;
