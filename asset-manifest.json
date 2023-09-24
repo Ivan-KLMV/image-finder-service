@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-04-images/static/css/main.f78840c2.css",
-    "main.js": "/goit-react-hw-04-images/static/js/main.9c8320a6.js",
-    "index.html": "/goit-react-hw-04-images/index.html",
-    "static/media/search-magnifying-glass-svgrepo-com.svg": "/goit-react-hw-04-images/static/media/search-magnifying-glass-svgrepo-com.46f83f6bbf60bc904bb85857bf65b5ea.svg",
-    "main.f78840c2.css.map": "/goit-react-hw-04-images/static/css/main.f78840c2.css.map",
-    "main.9c8320a6.js.map": "/goit-react-hw-04-images/static/js/main.9c8320a6.js.map"
+    "main.css": "/image-finder-service/static/css/main.f78840c2.css",
+    "main.js": "/image-finder-service/static/js/main.7d45c44b.js",
+    "index.html": "/image-finder-service/index.html",
+    "static/media/search-magnifying-glass-svgrepo-com.svg": "/image-finder-service/static/media/search-magnifying-glass-svgrepo-com.46f83f6bbf60bc904bb85857bf65b5ea.svg",
+    "main.f78840c2.css.map": "/image-finder-service/static/css/main.f78840c2.css.map",
+    "main.7d45c44b.js.map": "/image-finder-service/static/js/main.7d45c44b.js.map"
   },
   "entrypoints": [
     "static/css/main.f78840c2.css",
-    "static/js/main.9c8320a6.js"
+    "static/js/main.7d45c44b.js"
   ]
 }
