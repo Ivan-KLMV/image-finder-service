@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-04-images/static/css/main.f78840c2.css",
+    "main.js": "/goit-react-hw-04-images/static/js/main.9c8320a6.js",
+    "index.html": "/goit-react-hw-04-images/index.html",
+    "static/media/search-magnifying-glass-svgrepo-com.svg": "/goit-react-hw-04-images/static/media/search-magnifying-glass-svgrepo-com.46f83f6bbf60bc904bb85857bf65b5ea.svg",
+    "main.f78840c2.css.map": "/goit-react-hw-04-images/static/css/main.f78840c2.css.map",
+    "main.9c8320a6.js.map": "/goit-react-hw-04-images/static/js/main.9c8320a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f78840c2.css",
+    "static/js/main.9c8320a6.js"
+  ]
+}
