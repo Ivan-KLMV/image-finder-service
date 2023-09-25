@@ -1,2 +1,2 @@
-# image-finder-service
+# Image Finder Service
 Image Finder Service
